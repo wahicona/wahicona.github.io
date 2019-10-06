@@ -1122,6 +1122,30 @@ pre .javascript .function {
 .use-motion .menu-item {
   opacity: 0;
 }
+.book-mark-link {
+  border-bottom: none;
+  display: inline-block;
+  position: fixed;
+  right: 30px;
+  top: -10px;
+  transition: 0.3s;
+}
+@media (max-width: 991px) {
+  .book-mark-link {
+    display: none;
+  }
+}
+.book-mark-link::before {
+  color: #222;
+  content: '\f02e';
+  font-family: 'FontAwesome';
+  font-size: 32px;
+  line-height: 1;
+}
+.book-mark-link:hover,
+.book-mark-link-fixed {
+  top: -2px;
+}
 .sidebar {
   background: #222;
   bottom: 0;
@@ -1206,7 +1230,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #8fa729;
+  background: #e24aff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1256,6 +1280,7 @@ pre .javascript .function {
   padding: 0;
 }
 .links-of-blogroll-item {
+  display: inline-block;
   padding: 2px 10px;
 }
 .links-of-blogroll-item a,
@@ -1523,6 +1548,81 @@ pre .javascript .function {
     transform: scale(1.1);
   }
 }
+@media (max-width: 567px) {
+  .content-wrap {
+    padding: initial !important;
+  }
+  .posts-expand {
+    margin: initial !important;
+    padding-top: 8px !important;
+  }
+  .posts-expand .post-header {
+    padding: 0 18px;
+  }
+  .posts-expand .post-meta {
+    margin: 3px 0 10px 0 !important;
+  }
+  .post-block {
+    margin-top: initial !important;
+    padding: 8px 0 !important;
+  }
+  .post-body h1,
+  .post-body h2,
+  .post-body h3,
+  .post-body h4,
+  .post-body h5,
+  .post-body h6 {
+    margin: 10px 18px 8px;
+  }
+  .post-body .note h1,
+  .post-body .tabs .tab-content .tab-pane h1,
+  .post-body .note h2,
+  .post-body .tabs .tab-content .tab-pane h2,
+  .post-body .note h3,
+  .post-body .tabs .tab-content .tab-pane h3,
+  .post-body .note h4,
+  .post-body .tabs .tab-content .tab-pane h4,
+  .post-body .note h5,
+  .post-body .tabs .tab-content .tab-pane h5,
+  .post-body .note h6,
+  .post-body .tabs .tab-content .tab-pane h6 {
+    margin: 0 5px;
+  }
+  .post-body > p {
+    margin: 0 0 10px 0;
+    padding: 0 18px;
+  }
+  .post-body > ul {
+    margin-inline-end: 1em;
+  }
+  .post-body > blockquote {
+    margin: 0 18px;
+  }
+  .post-body > span.exturl {
+    margin-left: 18px;
+  }
+  .post-body > .post-button a {
+    margin-left: 18px;
+  }
+  .post-body .note > p,
+  .post-body .tabs .tab-content .tab-pane > p {
+    padding: 0 5px;
+  }
+  .post-body img,
+  .post-body video {
+    margin-bottom: 10px !important;
+  }
+  .post-body .note {
+    margin-bottom: 10px !important;
+    padding: 10px !important;
+  }
+  .post-body .tabs .tab-content .tab-pane {
+    padding: 10px 10px 0 10px !important;
+  }
+  .post-nav {
+    padding-bottom: 2px;
+  }
+}
 .back-to-top {
   background: #222;
   bottom: -100px;
@@ -1556,6 +1656,16 @@ pre .javascript .function {
     left: 20px;
     opacity: 0.8;
   }
+}
+.reading-progress-bar {
+  background: #37c6c0;
+  display: block;
+  height: 2px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 0;
+  z-index: 9999;
 }
 .post-body {
   overflow-wrap: break-word;
@@ -2567,8 +2677,31 @@ ul.breadcrumb li + li:last-child {
   padding: 3px 0 0;
   text-align: center;
 }
+.links-of-blogroll::before,
+.links-of-blogroll::after {
+  content: ' ';
+  display: table;
+}
+.links-of-blogroll::after {
+  clear: both;
+}
 .links-of-blogroll-item {
   padding: 0;
+  margin: 5px 0 0;
+  width: 50%;
+  width: unset;
+}
+.links-of-blogroll-item a,
+.links-of-blogroll-item span.exturl {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 0;
+  max-width: 216px;
+  overflow: hidden;
+  padding: 0 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .content-wrap {
   background: initial;
