@@ -1206,7 +1206,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #9affff;
+  background: #cc1bff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1460,7 +1460,7 @@ pre .javascript .function {
   animation: iconAnimate 1.33s ease-in-out infinite;
 }
 .with-love {
-  color: #808080;
+  color: #FF0033;
   display: inline-block;
   margin: 0 5px;
 }
@@ -1600,38 +1600,30 @@ pre .javascript .function {
   }
 }
 .back-to-top {
-  background: #222;
-  bottom: -100px;
-  box-sizing: border-box;
-  color: #fff;
+  background: #eee;
   cursor: pointer;
   font-size: 12px;
-  left: 30px;
+  margin: 1px -10px -20px;
   opacity: 0.6;
-  padding: 0 6px;
-  position: fixed;
   text-align: center;
-  transition-property: bottom;
-  z-index: 1050;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  width: 24px;
+  visibility: hidden;
 }
 .back-to-top span {
   display: none;
 }
 .back-to-top:hover {
-  color: #fc6423;
-}
-.back-to-top.back-to-top-on {
-  bottom: 30px;
+  opacity: 0.8;
 }
 @media (max-width: 991px) {
   .back-to-top {
-    left: 20px;
-    opacity: 0.8;
+    display: none;
   }
+}
+.back-to-top.back-to-top-on {
+  visibility: visible;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .post-body {
   overflow-wrap: break-word;
@@ -2393,7 +2385,7 @@ ul.breadcrumb li + li:last-child {
   box-sizing: border-box;
   float: right;
   padding: 40px;
-  width: calc(100% - 252px);
+  width: calc(100% - 259px);
 }
 @media (max-width: 991px) {
   .content-wrap {
@@ -2570,7 +2562,7 @@ ul.breadcrumb li + li:last-child {
 }
 .sidebar-inner.affix {
   position: fixed;
-  top: 12px;
+  top: 19px;
 }
 .sidebar-inner.affix-bottom {
   position: absolute;
@@ -2683,14 +2675,14 @@ ul.breadcrumb li + li:last-child {
 #posts > article + article .post-block {
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  margin-top: 12px;
+  margin-top: 19px;
 }
 .comments {
   background: #fff;
   border-radius: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   margin: auto;
-  margin-top: 12px;
+  margin-top: 19px;
   padding: 40px;
 }
 .tabs-comment {
@@ -2713,7 +2705,7 @@ ul.breadcrumb li + li:last-child {
   border-radius: initial;
   border-top: initial;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  margin: 12px 0 0;
+  margin: 19px 0 0;
   padding: 10px 0 10px;
 }
 .pagination .prev,
@@ -2734,7 +2726,7 @@ ul.breadcrumb li + li:last-child {
 }
 .sub-menu + #content > #posts .post-block {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
-  margin-top: 12px;
+  margin-top: 19px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sub-menu + #content > #posts .post-block {
@@ -2787,20 +2779,20 @@ ul.breadcrumb li + li:last-child {
     margin: initial;
   }
   .posts-expand .post-button {
-    margin: 12px 0;
+    margin: 19px 0;
   }
   .post-block {
     border-radius: initial;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
     min-height: auto;
-    padding: 12px;
+    padding: 19px;
   }
   #posts > article + article .post-block {
     margin-top: 8px;
   }
   .comments {
     margin-top: 8px;
-    padding: 10px 12px;
+    padding: 10px 19px;
   }
   .pagination {
     margin: 8px 0 0;
