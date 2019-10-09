@@ -14,7 +14,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/32x32.png?v=7.4.1">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/16x16.png?v=7.4.1">
   <link rel="mask-icon" href="/images/logo.svg?v=7.4.1" color="#222">
-  <link rel="alternate" href="/atom.xml" title="童心智造技术站" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="童心智造编程站" type="application/atom+xml">
 
 <link rel="stylesheet" href="/css/main.css?v=7.4.1">
 
@@ -57,17 +57,17 @@
 </script>
 
 
-  <meta name="description" content="学习也可以很有趣！">
+  <meta name="description" content="编程真的很有趣！">
 <meta name="keywords" content="童心智造">
 <meta property="og:type" content="website">
-<meta property="og:title" content="童心智造技术站">
+<meta property="og:title" content="童心智造编程站">
 <meta property="og:url" content="http://m8n4r8.coding-pages.com/tags/建议/index.html">
-<meta property="og:site_name" content="童心智造技术站">
-<meta property="og:description" content="学习也可以很有趣！">
+<meta property="og:site_name" content="童心智造编程站">
+<meta property="og:description" content="编程真的很有趣！">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="童心智造技术站">
-<meta name="twitter:description" content="学习也可以很有趣！">
+<meta name="twitter:title" content="童心智造编程站">
+<meta name="twitter:description" content="编程真的很有趣！">
   <link rel="canonical" href="http://m8n4r8.coding-pages.com/tags/建议/">
 
 
@@ -82,7 +82,7 @@
   };
 </script>
 
-  <title>标签: 建议 | 童心智造技术站</title>
+  <title>标签: 建议 | 童心智造编程站</title>
   
 
 
@@ -129,11 +129,11 @@
     <div>
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">童心智造技术站</span>
+        <span class="site-title">童心智造编程站</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">用于课后学习支持</p>
+        <p class="site-subtitle">用于课后学习&支持</p>
       
   </div>
 
@@ -168,26 +168,6 @@
     
 
     <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
-
-  </li>
-      
-      
-      
-        
-        <li class="menu-item menu-item-about">
-      
-    
-      
-      
-        
-      
-        
-      
-        
-      
-    
-
-    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
 
   </li>
       
@@ -314,9 +294,6 @@
     
     
   
-    
-    
-  
   
 
           <div id="content" class="content">
@@ -413,7 +390,7 @@
       src="/images/author.png"
       alt="王老师">
   <p class="site-author-name" itemprop="name">王老师</p>
-  <div class="site-description" itemprop="description">学习也可以很有趣！</div>
+  <div class="site-description" itemprop="description">编程真的很有趣！</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -611,6 +588,25 @@ setInterval("createtime()",250);
 
 
 
+<script>
+if (document.querySelectorAll('div.pdf').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+    document.querySelectorAll('div.pdf').forEach(element => {
+      PDFObject.embed(element.getAttribute('target'), element, {
+        pdfOpenParams: {
+          navpanes: 0,
+          toolbar: 0,
+          statusbar: 0,
+          pagemode: 'thumbs',
+          view: 'FitH'
+        },
+        PDFJS_URL: '/lib/pdf/web/viewer.html',
+        height: element.getAttribute('height') || '500px'
+      });
+    });
+  }, window.PDFObject);
+}
+</script>
 
 
 
